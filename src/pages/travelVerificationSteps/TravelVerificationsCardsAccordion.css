@@ -1,0 +1,63 @@
+.verification-card-style {
+    width: 100%;
+    margin: auto;
+    border: 1px solid #334BC2;
+    box-shadow: 0px 4px 30px 0px #2C3B971A;
+    font-size: 14px;
+
+    Label {
+        text-transform: capitalize;
+    }
+
+    hr {
+        top: 0px;
+        position: absolute;
+        width: 96%;
+        margin-top: 0;
+    }
+}
+
+.travellers-bar-card {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8px;
+    background: #2c3b970d;
+    color: #334BC2;
+    cursor: pointer;
+
+    .edit {
+        align-self: center;
+        color: var(--Color, #334BC2);
+
+        /* h4 */
+        font-family: Mukta;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        margin: 0;
+        margin-left: 11px;
+        /* 14px */
+    }
+}
+
+.title-medicle-history {
+    color: var(--Title-Text, #00183D);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.title-medicle-text {
+    max-width: 691px;
+    color: rgba(43, 53, 69, 0.80);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-wrap: wrap;
+}
+
+.custom-label-radio input[type="radio"]:checked+label {
+    color: #334BC2;
+}

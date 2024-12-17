@@ -1,0 +1,26 @@
+.vehicle-plans-Left-wrapper{
+    overflow-y: auto;
+}
+.vehicle-plan-left {
+  overflow: hidden; 
+  max-height: 100vh; 
+}
+.vehicle-plan-left::-webkit-scrollbar{
+  width: 0;
+}
+.vehicle-plan-left:hover::-webkit-scrollbar{
+  width: 1.5px;
+}
+
+.vehicle-plan-left:hover,
+.vehicle-plan-left:focus {
+  overflow-y: auto; 
+}
+
+
+@media screen and (max-width: 950px) {
+    .vehicle-plans-Left-wrapper {
+      display: none;
+    }
+    
+  }

@@ -1,0 +1,115 @@
+.input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #334BC2;
+}
+
+.text-danger {
+    color: red;
+}
+
+.detail-info-container {
+    padding: 16px;
+}
+
+.add-travelers {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Spacing between icons and text */
+    color: #334bc2;
+    cursor: pointer;
+}
+
+.add-traveler-icon,
+.remove-traveler-icon {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.add-traveler-icon:hover,
+.remove-traveler-icon:hover {
+    color: #1d2f91;
+}
+
+.traveler-dropdowns {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    gap: 16px; /* Adds spacing between dropdowns */
+}
+
+/* Dropdown container styles */
+select {
+    appearance: none; /* Remove default browser styles */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+/* Focused/expanded dropdown */
+select:focus {
+    border-color: #334BC2; /* Highlight color */
+    outline: none;
+    box-shadow: 0 0 4px rgba(51, 75, 194, 0.5); /* Glow effect */
+}
+
+/* Optional - dropdown icon styling (for custom arrow) */
+select::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Expanded dropdown list items (simulated effect) */
+option {
+    padding: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+
+/* Hover effect for options */
+option:hover {
+    background-color: #cacaca;
+}
+
+
+.traveler-item {
+    width: calc(50% - 8px); /* Ensures two items per row */
+}
+
+.traveler-select {
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enables scrolling when options exceed the visible limit */
+}
+
+
+
+.proceed-button {
+    margin-top: 20px;
+    background-color: #334bc2;
+    color: #fff;
+    border: none;
+}
+
+.proceed-button:hover {
+    background-color: #1d2f91;
+}
+
+@media (max-width: 768px) {
+    .traveler-item {
+        width: 100%; /* Adjusts to a single column on smaller screens */
+    }
+}
+
+
+

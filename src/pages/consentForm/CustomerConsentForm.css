@@ -1,0 +1,130 @@
+.consent-header-icon-container {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 8.16px;
+    justify-content: center;
+    align-items: center;
+    gap: 20.4px;
+    border-radius: 7.68px;
+    background: var(--Finhaat-Grey, #F4F4F4);
+
+    img {
+        width: 30.72px;
+        height: 30.72px;
+    }
+}
+
+.consent-title-text {
+    color: var(--Black, #000);
+    font-family: Mukta;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.consent-detail-title-text {
+    color: var(--Black, #000);
+    font-family: Mukta;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.consent-card-header-title {
+    color: rgba(0, 24, 61, 0.80);
+    font-family: Mukta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.consent-box-title {
+    color: rgba(43, 53, 69, 0.80);
+    /* text-align: right; */
+    font-family: Mukta;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.consent-box-text {
+    color: var(--Primary-Text, #2B3545);
+    /* text-align: right; */
+    font-family: Mukta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.consent-button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.reject-button-container {
+    display: flex;
+    width: 111px;
+    height: 43px;
+    padding: 8px 33.5px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--New-color, #334BC2);
+    color: var(--Finhaat-Blue, #2C3B97);
+
+    /* H2 */
+    font-family: Mukta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.approve-button-container {
+    display: flex;
+    width: 111px;
+    height: 43px;
+    padding: 8px 26px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--Finhaat-Blue, #283B99);
+    color: #FFF;
+
+    /* H2 */
+    font-family: Mukta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.consent-right-sec-card-container {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 65px;
+}
+@media  (max-width:1252px) {
+    .consent-right-sec-card-container{
+        display: none;
+    }
+}

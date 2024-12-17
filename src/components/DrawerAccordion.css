@@ -1,0 +1,49 @@
+.drawerAccordionContainer {}
+
+.drawerAccordionCircleIConContainer {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: #334bc2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.drawerAccordionCoverName {
+    color: #2B3545;
+    font-family: Mukta;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    /* width: 166px; */
+}
+
+.drawerAccordionAmount {
+    color: #2B3545;
+    font-family: Mukta, sans-serif;
+    /* Adding a fallback font */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.drawerAccordionDeductibleText {
+    color: #2B3545;
+    font-family: Mukta, sans-serif;
+    /* Adding a fallback font */
+    font-size: 12px;
+}
+
+.drawerAccordionBody {
+    padding-top: 8px;
+    color: #6E7A85;
+    font-family: Mukta, sans-serif;
+    /* Adding a fallback font */
+    font-size: 14px;
+}
+@media (max-width:768px) {
+    .drawerAccordionCoverName{
+        width: 102px;
+    }
+}

@@ -1,0 +1,60 @@
+.filter-accordion-left-container {
+    width: 245px;
+    padding: 2px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #FFF;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.02);
+}
+
+.filter-accordion-title-filter {
+    padding: 20px;
+    padding-bottom: 0;
+    color: var(--Title-Text, #00183D);
+
+    /* H4 */
+    font-family: Mukta;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.filter-accordion-left-title {
+    color: rgba(0, 24, 61, 0.80);
+    font-family: Mukta;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.left-plan-radio-button-text {
+    color: var(--Primary-Text, #2B3545);
+    font-family: Mukta;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.accordion {
+    --bs-accordion-border-width: none;
+}
+
+.filter-accordion-left-devider {
+    margin: auto;
+    color: inherit;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: .25;
+    width: 90%;
+    margin-top: 7px;
+}
+
+.accordion-body {
+    padding-top: 0;
+}

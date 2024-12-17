@@ -1,0 +1,52 @@
+.compare-plans-container {
+    padding-top: 40px;
+    max-width: 881px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.compare-plans-header-card {
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 11px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #FFF;
+    box-shadow: 0px 4px 30px 20px rgba(0, 0, 0, 0.02);
+}
+
+.compare-header-box-container {
+    padding: 7px;
+    width: 205px;
+    height: 176px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.compare-header-title-back {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0E233C;
+    font-family: Mukta;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.compare-header-title-text {
+    color: var(--Black, #000);
+
+    /* H2 */
+    font-family: Mukta;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}

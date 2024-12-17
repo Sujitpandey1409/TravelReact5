@@ -1,0 +1,166 @@
+/* Card container styling */
+.card-container {
+    font-family: Mukta;
+    position: relative;
+    width: 419px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 16px;
+    padding-top: 55px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+    max-width: 419px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Card header styling */
+.card-header {
+    display: flex;
+    border-bottom: 1px solid #e1e8ed;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    background: #F4F6FF;
+    border-radius: 8px 8px 0 0!important;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px;
+}
+
+.company-logo {
+    width: 29px;
+    height: 27px;
+}
+
+.company-name {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.compare-label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.compare-label input {
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+/* Plan and price section */
+.card-body h2 {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--Primary-Text, #2B3545);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.digital-process {
+    font-size: 14px;
+    color: rgba(87, 88, 89, 0.80);
+    font-family: Mukta;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.you-pay {
+    font-size: 14px;
+    color: #334BC2;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.per-person {
+    color: #575859;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.buy-now {
+    background-color: #283B99;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #003d99;
+}
+
+/* Benefits section */
+.benefits-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4F6FF;
+    padding: 12px;
+    border-radius: 8px 8px 0 0;
+}
+
+.benefit p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.view-features {
+    font-size: 14px;
+    color: #334BC2;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap:3px;
+    cursor: pointer;
+    background-color: #f7f9fc;
+    padding: 12px;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Card wrapper for multiple cards */
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.show-more-btn {
+    background-color: #0052cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 950px) {
+    .card-wrapper {
+        justify-content: space-evenly;
+    }
+}
