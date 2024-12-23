@@ -14,11 +14,43 @@ function FilterAccordionLeft(props) {
     const [selectedOptionVisaType, setSelectedOptionVisaType] = useState('tourist');
     const [selectedOptionCoverage, setSelectedOptionCoverage] = useState([]);
     const [selectedOptionTravelPurpose, setSelectedOptionTravelPurpose] = useState([]);
+    // Scroll to the specific element
+    const scrollTo = (id) => {
+        setTimeout(() => {
+            
+            const element = document.querySelector(id);
+            if (element) {
+                console.log('hii i am id', id, id==='#planId');
+                
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, (100));
+    };
     const toggle = (id) => {
         if (open === id) {
             setOpen();
         } else {
             setOpen(id);
+            console.log(id);
+            switch (true) {
+                case (id==='1'):
+                    console.log('yes i am id ', id);
+                    
+                    scrollTo('#planId')    
+                    break;
+                case (id==='2'):
+                    scrollTo('#sumInsuredId')
+                case (id==='3'):
+                    scrollTo('#insurerId') 
+                case (id==='4'):
+                    scrollTo('#visaId')   
+                case (id==='5'):
+                    scrollTo('#coverageId')        
+                case (id==='6'):
+                    scrollTo('#purposeId')        
+                default:
+                    break;
+            }
         }
     };
 
@@ -58,7 +90,7 @@ function FilterAccordionLeft(props) {
                         <div style={{ maxWidth: '300px' }}>
                             <FormGroup tag="fieldset">
                                 {/* Single Trip Plans */}
-                                <FormGroup check>
+                                <FormGroup id='planId' check>
                                     <Label check>
                                         <Input
                                             type="radio"
@@ -90,7 +122,7 @@ function FilterAccordionLeft(props) {
                                 </FormGroup>
 
                                 {/* Student Plans */}
-                                <FormGroup check>
+                                <FormGroup id='1' check>
                                     <Label check>
                                         <Input
                                             type="radio"
@@ -150,7 +182,7 @@ function FilterAccordionLeft(props) {
                                 </FormGroup>
 
                                 {/* Student Plans */}
-                                <FormGroup check>
+                                <FormGroup id='sumInsuredId' check>
                                     <Label check>
                                         <Input
                                             type="radio"
@@ -182,7 +214,7 @@ function FilterAccordionLeft(props) {
                                 </FormGroup>
 
                                 {/* Student Plans */}
-                                <FormGroup check>
+                                <FormGroup id='2' check>
                                     <Label check>
                                         <Input
                                             type="radio"
@@ -208,7 +240,7 @@ function FilterAccordionLeft(props) {
                     <AccordionHeader targetId="3"><div className="filter-accordion-left-title">Insurer</div></AccordionHeader>
                     <AccordionBody className='pt-0' accordionId="3">
                         <div style={{ maxWidth: '300px' }}>
-                            <FormGroup tag="fieldset">
+                            <FormGroup id='insurerId' tag="fieldset">
                                 <span className='left-plan-radio-button-text'>
                                     Insurer
                                 </span>
@@ -226,7 +258,7 @@ function FilterAccordionLeft(props) {
                         <div style={{ maxWidth: '300px' }}>
                             <FormGroup tag="fieldset">
                                 {/* Tourist/Visitor Visa */}
-                                <FormGroup check>
+                                <FormGroup id='4' check>
                                     <Label check>
                                         <Input
                                             type="radio"
@@ -258,7 +290,7 @@ function FilterAccordionLeft(props) {
                                 </FormGroup>
 
                                 {/* Long Term Work Visa */}
-                                <FormGroup check>
+                                <FormGroup id='visaId' check>
                                     <Label check>
                                         <Input
                                             type="radio"
@@ -348,7 +380,7 @@ function FilterAccordionLeft(props) {
                                 </FormGroup>
 
                                 {/* Adventure Sports Covered */}
-                                <FormGroup check>
+                                <FormGroup id='coverageId' check>
                                     <Label check>
                                         <Input
                                             type="checkbox"
@@ -404,7 +436,7 @@ function FilterAccordionLeft(props) {
                         <div style={{ maxWidth: '300px' }}>
                             <FormGroup tag="fieldset">
                                 {/* Holiday/Tourism */}
-                                <FormGroup check>
+                                <FormGroup id='6' check>
                                     <Label check>
                                         <Input
                                             type="checkbox"
@@ -419,7 +451,7 @@ function FilterAccordionLeft(props) {
                                 </FormGroup>
 
                                 {/* Studies */}
-                                <FormGroup check>
+                                <FormGroup id='purposeId' check>
                                     <Label check>
                                         <Input
                                             type="checkbox"
